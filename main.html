@@ -8,6 +8,46 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	    <h1>Job Application Form</h1>
+    <form action="./jobform.html" method="get">
+        <div>
+            <label for="name">Name*</label>
+            <input type="text" placeholder="Name" name="name" id="#name" required>
+        </div>
+        <div>
+            <label for="Email">E-mail*</label>
+            <input type="email" placeholder="Email" name="Email" id="#email" required>
+        </div>
+        <div>
+            <label>Gender*</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="#gender" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="#gender" required>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="#gender" required>
+        </div>
+        <div>
+            <label for="laptop brands">Laptop Brands(options : [Apple, Asus, HP])</label>
+            <input type="text" placeholder="choose one" name="laptop brands" id="#laptop-brands">
+        </div>
+        <div>
+            <label for="age">Age*</label>
+            <input type="number" placeholder="Age" name="age" id="#age"required>
+        </div>
+        <div>
+            <label for="dob">DOB*</label>
+            <input type="date" name="dob" id="#dob" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" name="password" id="#password" required>
+        </div>
+        <div>
+            <input type="reset">
+            <input type="submit" name="submit" id="#submit">
+        </div>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
