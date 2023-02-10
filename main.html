@@ -9,55 +9,46 @@
 <body>
 	<!-- the entire body must be written by student -->
 <!-- 	    <h1>Job Application Form</h1> -->
-    <form action="./jobform.html" method="get">
-        <div>
-            <label for="name">Name*</label>
-            <input type="text" placeholder="Name" name="name" id="#name" required>
-        </div>
-        <div>
-            <label for="Email">E-mail*</label>
-            <input type="email" placeholder="Email" name="Email" id="#email" required>
-        </div>
-        <div>
-            <label>Gender*</label>
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="#gender" required>
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="#gender" required>
-            <label for="other">Other</label>
-            <input type="radio" name="gender" id="#gender" required>
-        </div>
-        <div>
-            <label for="laptop brands">Laptop Brands: </label>
-			<label for="LaptopBrands">Apple</label>
-            <input type="checkbox" name="LaptopBrands" id="#LaptopBrands">
-            <label for="LaptopBrands">Asus</label>
-            <input type="checkbox" name="LaptopBrands" id="#LaptopBrands">
-            <label for="LaptopBrands">HP</label>
-            <input type="checkbox" name="LaptopBrands" id="#LaptopBrands">
-            
-        </div>
-        <div>
-            <label for="age">Age*</label>
-            <input type="number" placeholder="Age" name="age" id="#age"required>
-        </div>
-        <div>
-            <label for="dob">DOB*</label>
-            <input type="date" name="dob" id="#dob" required>
-        </div>
-        <div>
-            <label for="password">Password*</label>
-            <input type="password" placeholder="Password" name="password" id="#password" required>
-        </div>
+   <form  method="post">
 		<div>
-            <label for="portfolio">Portfolio</label>
-            <input type="url" placeholder="Portfolio" name="portfolio" id="portfolio" required>
-        </div>
-        <div>
-<!--             <input type="reset"> -->
-            <input type="submit" name="submit" id="#submit">
-        </div>
-    </form>
+			<label for="name">Name*</label>
+			<input type="text" required id="name">
+		</div>
+		<div>
+			<label for="email">Email*</label>
+			<input type="email" required id="email">
+		</div>
+		<div>
+			<label for="gender">Gender*</label>
+			<input type="radio" name="gender" required id="gender">Male
+			<input type="radio" name="gender" required id="gender">Female
+		</div>
+		<div>
+			<label for="laptop">Laptop Brands</label>
+		<select id="laptop">
+			<option value="apple">Apple</option>
+			<option value="asus">Asus</option>
+			<option value="hp">HP</option>
+		</select>
+		</div>
+		<div>
+			<label for="age">Age*</label>
+			<input type="number" required id="age">
+		</div>
+		<div>
+			<label for="dob">DOB*</label>
+			<input type="date" required id="dob">
+		</div>
+		<div>
+			<label for="password">Password*</label>
+			<input type="password" required id="password">
+		</div>
+		<div>
+			<label for="portfolio">Portfolio</label>
+			<input type="url" required id="portfolio">
+		</div>
+		<button type="submit">Submit</button>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
